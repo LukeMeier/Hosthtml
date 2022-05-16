@@ -1,0 +1,217 @@
+@keyframes anima1 {
+    0%{left: -10px; top: -10px; background-color: white; transform: rotate(0deg);}
+    1%{left: -10px; top: -10px; background-color: white; transform: rotate(0deg);}
+    20%{left: 667.5px; top: 296.75px; background-color: aqua; transform: rotate(150deg);}
+    40%{left: 667.5px; top: 15px; background-color: azure; transform: rotate(45deg);}
+    60%{left: 15px; top: 296.75px; background-color: green; transform: rotatex(90deg);}
+    80%{left: 667.5px; top: 296.75px; background-color: gold; transform: rotate(100deg);}
+    99%{left: -10px; top: -10px; background-color: white; transform: rotate(0deg);}
+    100%{left: -10px; top: -10px; background-color: white; transform: rotate(0deg);}
+}
+@keyframes anima2 {
+    0%{left: -10px; top: 585px; background-color: white; transform: rotate(0deg);}
+    1%{left: -10px; top: 585px; background-color: white; transform: rotate(0deg);}
+    20%{left: 667.5px; top: 196.75px; background-color: aqua; transform: rotate(150deg);}
+    40%{left: 15px; top: 196.75px; background-color: azure; transform: rotatex(90deg);}
+    60%{left: 667.5px; top: 560px; background-color: green; transform: rotate(45deg);}
+    80%{left: 667.5px; top: 196.75px; background-color: gold; transform: rotate(100deg);}
+    99%{left: -10px; top: 585px; background-color: white; transform: rotate(0deg);}
+    100%{left: -10px; top: 585px; background-color: white; transform: rotate(0deg);}
+}
+@keyframes anima3 {
+    0%{left: 1425px; top: -210px; background-color: white; transform: rotate(0deg);}
+    1%{left: 1425px; top: -210px; background-color: white; transform: rotate(0deg);}
+    20%{left: 667.5px; top: 96.75px; background-color: aqua; transform: rotate(150deg);}
+    40%{left: 1400px; top: 96.75px; background-color: azure; transform: rotatex(90deg);}
+    60%{left: 667.5px; top: -185px; background-color: green; transform: rotate(45deg);}
+    80%{left: 667.5px; top: 96.75px; background-color: gold; transform: rotate(100deg);}
+    99%{left: 1425px; top: -210px; background-color: white; transform: rotate(0deg);}
+    100%{left: 1425px; top: -210px; background-color: white; transform: rotate(0deg);}
+}
+@keyframes anima4 {
+    0%{left: 1425px; top: 385px; background-color: white; transform: rotate(0deg);}
+    1%{left: 1425px; top: 385px; background-color: white; transform: rotate(0deg);}
+    20%{left: 667.5px; top: -3.25px; background-color: aqua; transform: rotate(150deg);}
+    40%{left: 667.5px; top: 360px; background-color: azure; transform: rotate(45deg);}
+    60%{left: 1400px; top: -3.25px; background-color: green; transform: rotatex(90deg);}
+    80%{left: 667.5px; top: -3.25px; background-color: gold; transform: rotate(100deg);}
+    99%{left: 1425px; top: 385px; background-color: white; transform: rotate(0deg);}
+    100%{left: 1425px; top: 385px; background-color: white; transform: rotate(0deg);}
+}
+.redactive {
+    background-color: red;
+    margin: 5px;
+    animation: filter 5s linear 0s infinite alternate;
+}
+.greenactive {
+    background-color: green;
+    margin: 5px;
+    animation: filter 5s linear 0s infinite alternate;
+}
+.yelowactive {
+    background-color: yellow;
+    margin: 5px;
+    animation: filter 5s linear 0s infinite alternate;
+}
+.blueactive {
+    background-color: blue;
+    margin: 5px;
+    animation: filter 5s linear 0s infinite alternate;
+}
+.red {
+    background-color: red;
+    margin: 5px;
+}
+.green {
+    background-color: green;
+    margin: 5px;
+}
+.yelow {
+    background-color: yellow;
+    margin: 5px;
+}
+.blue {
+    background-color: blue;
+    margin: 5px;
+}
+@keyframes filter {
+    0%{filter: grayscale(0%); transform: rotate(0deg);}
+    100%{filter: grayscale(100%); transform: rotate(360deg);}
+}
+body{
+    background-color: black;
+    animation: hint 5s 0s infinite alternate;
+}
+@keyframes hint {
+    0%{background-color: blue}
+    20%{background-color: black;}
+    40%{background-color: orangered;}
+    60%{background-color: darkslategray;}
+    80%{background-color: violet;}
+    100%{background-color: blue;}
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#boxactive1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: anima1 5s linear 0s infinite alternate;
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#boxactive2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: anima2 5s linear 0s infinite alternate;
+}
+#box3{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#boxactive3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: anima3 5s linear 0s infinite alternate;
+}
+#box4{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#boxactive4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: anima4 5s linear 0s infinite alternate;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+  background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+  }
+  .btn-5:hover {
+    color: #f0094a;
+    background: transparent;
+     box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
